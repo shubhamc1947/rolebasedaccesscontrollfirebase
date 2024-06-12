@@ -1,0 +1,498 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  cursor: pointer;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:royalblue;
+}
+
+
+/* home page */
+
+.homepage{
+  width:100%;
+  /* background-color: blue; */
+
+}
+.homepage>h1{
+  font-size: 3rem;
+  text-align: center;
+  /* margin-block:2rem; */
+}
+.homepage .usernamehome{
+  font-family: cursive!important;
+}
+
+.homepage .homepagecont{
+  border-radius: 10px;
+  width:fit-content;
+  padding:2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  gap:2rem;
+}
+.homepage .homepagecont .userdatainfo{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.numberwrap{
+  width: 100%;
+  display: flex;
+  gap:2rem;
+
+  margin-top: 1rem;
+}
+.numberwrap .numbercont{
+  border-radius: 10px;
+/* background-color: blue; */
+padding:2rem;
+width:300px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+
+.totalrolebox{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.totaldivnum{
+  /* text-align: center; */
+  margin-top:2rem;
+}
+.royalblue{
+  color:royalblue!important;
+}
+
+
+
+
+/* navbar loading  */
+.navloading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+}
+
+/* App.jsx code  */
+
+.dashboardcont{
+  margin-top: 3rem;
+  display: flex;
+  gap:2rem;
+}
+
+/* navigation css */
+
+.navigationwrap{
+  width:200px;
+  border:1px solid #333;
+}
+
+.navigationwrap ul li{
+  border:1px solid #333;
+  
+}
+.navigationwrap ul li a{
+  display: block;
+  cursor: pointer;
+  padding:1rem;
+
+}
+
+
+/* user registration form  */
+.userformwrap {
+  display: flex;
+  gap:1rem;
+  justify-content: space-between;
+}
+.register {
+  /* background-color: #CDE8E5; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin:auto; */
+}
+
+.register .heading {
+  margin-bottom: 0.5rem;
+}
+
+.register .heading h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.register .container {
+  background-color: #fff;
+  padding: 1rem;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.register .container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.register .container .form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register .container .form input,
+.register .container .form select {
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #7AB2B2;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.register .container .form button {
+  padding: 0.3rem;
+  background-color: #7AB2B2;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.register .container .form button:hover {
+  background-color: #4D869C;
+}
+
+.register .container .form .errmsg {
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .register .container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .register .heading h2 {
+    font-size: 2rem;
+  }
+  .register .container {
+    margin-inline: 1rem;
+    width: 100%;
+  }
+}
+
+
+/* login page css */
+
+.login {
+  background-color: #cde8e5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login .heading h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.login .container {
+  background-color: #fff;
+  padding: 1rem;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.login .container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.login .container .form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login .container input {
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #7ab2b2;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.login .container input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login .container button {
+  padding: 0.3rem;
+  background-color: #7ab2b2;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login .container button:hover {
+  /* border: 1px solid #4d869c; */
+}
+
+.login .container .errmsg {
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .login .container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .login .heading h2 {
+    font-size: 2rem;
+  }
+  .login .container {
+    margin-inline: 1rem;
+    width: 100%;
+  }
+  .login .container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+.loarderwrap{
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  top:0;left:0;right:0;
+  display: flex;justify-content: center;align-items: center;
+  /* background-color: red; */
+  }
+  
+  .loarderwrap .loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+/* add role */
+.add-role-wrap{
+  display: flex;
+  gap:2rem;
+}
+
+.add-role {
+
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.add-role h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.add-role form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-role form div {
+  margin-bottom: 1rem;
+}
+
+.add-role form div label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.add-role form div input[type="text"] {
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #7ab2b2;
+  outline: none;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.add-role form div input[type="text"]:focus {
+  border-bottom: 1px solid #4d869c;
+}
+
+.add-role form div .multi-select .dropdown-container {
+  border: 1px solid #7ab2b2;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.add-role form div .multi-select .dropdown-container .multi-select-option {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.add-role form div .multi-select .dropdown-container .multi-select-option:hover {
+  background-color: #eef7ff;
+}
+
+.add-role form div .multi-select .dropdown-container .multi-select-option.selected {
+  background-color: #7ab2b2;
+  color: #fff;
+}
+.add-role form .addrolebtn{
+  padding: 0.3rem;
+  background-color: #7ab2b2;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.add-role form div button[type="submit"] {
+
+}
+
+.add-role form div button[type="submit"]:hover {
+  background-color: #4d869c;
+}
+
+
+.btndesign{
+  padding: 0.3rem;
+  background-color: #7ab2b2;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* user edit form css */
+
+/* Add this to your CSS file */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+
+/* page not found */
+.pagenotfound {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.pagenotfound > div {
+  margin: 10px 0;
+}
+
+.pagenotfound h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.pagenotfound p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.backtohome a {
+  padding: 0.3rem;
+  background-color: #7ab2b2;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color:#333;
+}
+
